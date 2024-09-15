@@ -1,0 +1,76 @@
+/* إعدادات عامة للجسم */
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em; /* حجم الخط الأساسي */
+    overflow: hidden;
+}
+
+/* تصميم الهيدر */
+header {
+    background-color: #4b0082;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* تصميم الشرائح */
+section {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    padding: 25px;
+    background-color: white;
+    margin: 15px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+section.active {
+    display: block;
+    opacity: 1;
+}
+
+/* تصميم الزر */
+/* تصميم الزر ليكون في الزاوية العلوية اليمنى */
+.button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* تأكد من ظهوره فوق جميع العناصر */
+}
+
+.btn {
+    background-color: #4b0082;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #6a0dad;
+}
+
+
+/* إعداد تأثيرات عند تمرير الماوس على الصور */
+.image-container img:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
